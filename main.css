@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    border-radius: 30px;
+}
+
+.body {
+    border: 4px solid #FFFFFF;
+    background: #FFEBC1;
+    border-radius: 30px;
+    padding: 3rem 5rem;
+}
+
+
+/*--------------------------
+        Header
+---------------------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 2rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+header ul li.active {
+    color: #FF6300;
+}
+
+header .search {
+    background: #FFAD51;
+    opacity: 0.39;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    width: 41px;
+    height: 25px;
+}
+
+header .search img {
+    display: flex;
+    margin: auto;
+    padding-top: 3px;
+}
+
+
+/*-------------------------------
+        Main
+--------------------------------*/
+
+main {
+    margin-top: 3rem;
+}
+
+main .platform {
+    padding: 2rem 4rem;
+    width: 100%;
+    background: linear-gradient(262.01deg, #FEAD50 17.36%, #FDBC0B 50.14%, #FFC000 73.39%, #FDC83C 88.71%, #FFDB7A 98.65%);
+    box-shadow: 0px 4px 4px #FFAE51;
+    border-radius: 30px;
+    padding-bottom: 0;
+    margin-bottom: 6rem;
+}
+
+main .platform .top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .platform .top .keyword {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #000000;
+}
+
+main .platform .top .platform-name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    color: #000000;
+}
+
+main .platform .top .see-more {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    color: #000000;
+}
+
+
+/*--------Item----------*/
+
+main .platform .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+    transform: translateY(2rem);
+}
+
+main .platform .results .item {
+    width: 100%;
+    background-image: url('images/components/dot-grid\ 2.png');
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+main .platform .results .item .image {
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    padding-top: 1rem;
+}
+
+main .platform .results .item .image img {
+    width: 100%;
+}
+
+main .platform .results .item .title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+main .platform .results .item .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    padding: 0 15%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    background: #C4C4C4;
+    opacity: 0.5;
+    border-radius: 0px 0px 30px 30px;
+}
